@@ -242,8 +242,14 @@ export default class StepIndicator extends Component {
     var labelViews = labels.map((label, index) => {
       const selectedStepLabelStyle =
         index === currentPosition
-          ? { color: this.state.customStyles.currentStepLabelColor }
-          : { color: this.state.customStyles.labelColor }
+          ? {
+            color: this.state.customStyles.currentStepLabelColor,
+            fontWeight: this.state.customStyles.currentStepLabelFontWeight
+          }
+          : {
+            color: this.state.customStyles.labelColor,
+            fontWeight: this.state.customStyles.labelFontWeight
+          }
       return (
         <TouchableWithoutFeedback
           style={styles.stepLabelItem}
@@ -333,7 +339,8 @@ export default class StepIndicator extends Component {
         }
         indicatorLabelStyle = {
           fontSize: this.state.customStyles.stepIndicatorLabelFontSize,
-          color: this.state.customStyles.stepIndicatorLabelFinishedColor
+          color: this.state.customStyles.stepIndicatorLabelFinishedColor,
+          fontWeight: this.state.customStyles.stepIndicatorLabelFinishedFontWeight
         }
         break
       }
@@ -350,7 +357,8 @@ export default class StepIndicator extends Component {
         indicatorLabelStyle = {
           overflow: 'hidden',
           fontSize: this.state.customStyles.stepIndicatorLabelFontSize,
-          color: this.state.customStyles.stepIndicatorLabelUnFinishedColor
+          color: this.state.customStyles.stepIndicatorLabelUnFinishedColor,
+          fontWeight: this.state.customStyles.stepIndicatorLabelUnFinishedFontWeight
         }
         break
       }

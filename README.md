@@ -118,7 +118,10 @@ onPageChange(position){
 | ```labelSize``` | Number  | 13
 | ```labelAlign``` | String  | 'center'
 | ```labelFontFamily``` | String  |
-
+| ```labelFontWeight``` | String  |
+| ```currentStepLabelFontWeight``` | String  |
+| ```stepIndicatorLabelFinishedFontWeight``` | String  |
+| ```stepIndicatorLabelUnFinishedFontWeight``` | String  |
 
 ### Contributing
 
