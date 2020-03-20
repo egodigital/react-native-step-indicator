@@ -213,6 +213,40 @@ interface StepIndicatorStyles {
    *
    */
   labelFontFamily?: string
+
+  /**
+   * Font weight for the labels
+   * 
+   * @type {string}
+   * @memberof StepIndicatorStyles
+   */
+  labelFontWeight?: string
+
+  /**
+   * Font weight of the current step label
+   * 
+   * @type {string}
+   * @memberof StepIndicatorStyles
+   */
+  currentStepLabelFontWeight?: string
+
+  /**
+   * Font weight of labels that their steps are finished
+   *
+   * @type {string}
+   * @memberof StepIndicatorStyles
+   *
+   */
+  stepIndicatorLabelFinishedFontWeight?: string
+
+  /**
+   * Font weight of labels that their steps are unfinished
+   *
+   * @type {string}
+   * @memberof StepIndicatorStyles
+   *
+   */
+  stepIndicatorLabelUnFinishedFontWeight?: string
 }
 
 interface StepIndicatorProps {
